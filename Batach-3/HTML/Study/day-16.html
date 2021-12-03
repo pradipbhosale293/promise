@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        difference bet Canvas and SVG
+        Canvas:=> must use javascript for draw graphics 
+     -->
+</head>
+<body>
+    <h1>HTML canvas</h1>
+
+
+    <canvas id="myCanvas" height="400px" width="400px" style="border: 1px solid red;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+    
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(400, 400);
+        ctx.stroke();
+
+        var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+gradient.addColorStop("0", "magenta");
+gradient.addColorStop("0.5", "blue");
+gradient.addColorStop("1.0", "red");
+
+// Fill with gradient
+ctx.strokeStyle = gradient;
+
+ctx.strokeText("Claritech Solutions LLP Pune", 10, 200);
+
+    </script>
+</body>
+</html>

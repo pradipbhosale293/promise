@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <!-- 
+      table,th,td,tr
+      colspan => merge coloumn as per value
+      row => merge row as per value
+      caption => print after table tag.
+   -->
+   <style>
+       tr,td,th {
+        border: 1px solid yellow;
+        padding: 20px;
+       }
+       thead {
+    background: red;
+    border: 1px solid;
+}
+tbody {
+    background: green;
+    color: #fff;
+}
+.test-class {
+    border: 10px solid blue;
+}
+   </style>
+</head>
+<body>
+    <h1>Table element</h1>
+    <table class="test-class">
+        <caption>test caption bottom of tr</caption>
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td >Row span test</td>
+            <td >Colspan test</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        
+        </tbody>
+      </table>
+</body>
+</html>
