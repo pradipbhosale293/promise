@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        alt=>image path/render image having problems 
+        src=>path
+        
+        1]root folder [file and img are on same location]
+        
+        2]folder_name=>image_name [not include space _ -]
+
+        3]out off directory
+        ../../../
+
+        nested folder
+        folder_name/folder_name/folder_name/folder_name/image_name.jpg/png
+        external link
+        paste link[https://image.freepik.com/free-psd/creative-fire-text-effect_23-2149016456.jpg]
+        
+        absolute path// use
+
+        loading speed => 
+
+        all types of images include in img tag
+
+     -->
+</head>
+<body>
+    <h1>Image Tag</h1>
+
+    <img src="images/android-icon-192x192.png" alt="this is alternative text"><br>
+    <img src="../minimal-desktop-workspace-mock-up-design_23-2149012109.jpg" alt="out of folder"><br>
+    <img src="../Practice/minimal-desktop-workspace-mock-up-design_23-2149012109.jpg" alt="out of folder">
+   
+    <img src="images/day-0/day-1/day-2/minimal-scandinavian-breakfast-nook-style_53876-105810.jpg" alt="">
+    <img src="https://image.freepik.com/free-psd/creative-fire-text-effect_23-2149016456.jpg" alt="external image">
+    <img src="realistic-back-school-vertical-sale-flyer-template_52683-67603.jpg" alt="">
+<hr>
+<br><br><br>
+    <img src="/var/www/html/Batach-3/HTML/Study/realistic-back-school-vertical-sale-flyer-template_52683-67603.jpg" alt="Absolute path test from server">
+</body>
+</html>
